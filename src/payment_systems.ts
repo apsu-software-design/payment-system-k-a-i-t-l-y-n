@@ -1,2 +1,2 @@
-export class PaymentSystemExecutor {
+export class PaymentSystemContext{
 }

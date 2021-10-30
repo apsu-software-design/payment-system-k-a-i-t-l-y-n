@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PaymentSystemExecutor = void 0;
-var PaymentSystemExecutor = /** @class */ (function () {
-    function PaymentSystemExecutor() {
+exports.PaymentSystemContext = void 0;
+var PaymentSystemContext = /** @class */ (function () {
+    function PaymentSystemContext() {
     }
-    return PaymentSystemExecutor;
+    return PaymentSystemContext;
 }());
-exports.PaymentSystemExecutor = PaymentSystemExecutor;
+exports.PaymentSystemContext = PaymentSystemContext;
