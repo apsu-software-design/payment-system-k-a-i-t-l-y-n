@@ -6,12 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type" : "module",
+  "type": "module",
   "author": "Kaitlyn Hardin",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^6.0.58",
     "@types/readline-sync": "^1.4.3",
+    "check-node-version": "^4.1.0",
     "readline-sync": "^1.4.5"
   }
 }
