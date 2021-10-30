@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "YOUR NAME HERE",
+  "type" : "module",
+  "author": "Kaitlyn Hardin",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^6.0.58",
