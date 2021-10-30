@@ -41,56 +41,14 @@ function showMainMenu(psc) {
     }
 }
 function showCreditCardPaymentMenu(psc) {
-    console.log('Enter Credit Card Payment Details.');
-    var name = readlineSync.question('  Name: ');
-    var creditCardNumber = readlineSync.question('  Credit Card Number: ');
-    var creditCardExpirationDate = readlineSync.question('  Credit Card Expiration Date (MM/DD): ');
-    var valid = /^[\w.' ]+$/.test(name) && /\d{15,16}/.test(creditCardNumber) && /\d\d\/\d\d/.test(creditCardExpirationDate);
-    if (valid) {
-        console.log("Your payment information is being encrypted.");
-        console.log("The payment is being processed.");
-    }
-    else {
-        console.log('The payment is invalid.');
-    }
+    psc.getExecutor("credit card").execute();
 }
 function showBankDraftPaymentMenu(psc) {
-    console.log('Enter Bank Account Details.');
-    var name = readlineSync.question('  Name: ');
-    var bankRoutingNumber = readlineSync.question('  Bank Routing Number: ');
-    var bankAccountNumber = readlineSync.question('  Bank Account Number: ');
-    var valid = /^[\w.' ]+$/.test(name) && /\d{9}/.test(bankRoutingNumber) && /\d{6,12}/.test(bankAccountNumber);
-    if (valid) {
-        console.log("Your payment information is being encrypted.");
-        console.log("The payment is being processed.");
-    }
-    else {
-        console.log('The payment is invalid.');
-    }
+    psc.getExecutor("bank draft").execute();
 }
 function showOnlinePaymentMenu(psc) {
-    console.log('Enter Online Payment Details.');
-    var email = readlineSync.question('  Enter Your Email Address: ');
-    var paymentPassword = readlineSync.question('  Enter Your Payment Password: ');
-    var valid = /^[\w@.]+$/.test(email) && /\w+/.test(paymentPassword);
-    if (valid) {
-        console.log("Your payment information is being encrypted.");
-        console.log("The payment is being processed.");
-    }
-    else {
-        console.log('The payment is invalid.');
-    }
+    psc.getExecutor("online payment").execute();
 }
 function showOfflinePaymentMenu(psc) {
-    console.log('Enter Offline Payment Details.');
-    var name = readlineSync.question('  Name: ');
-    var billingAddress = readlineSync.question('  Enter Your Billing Address: ');
-    var valid = /^[\w.' ]+$/.test(name) && /^[\w.' ]+$/.test(billingAddress);
-    if (valid) {
-        console.log("Your payment information is being encrypted.");
-        console.log("The payment is being processed.");
-    }
-    else {
-        console.log('The payment is invalid.');
-    }
+    psc.getExecutor("offline payment").execute();
 }
