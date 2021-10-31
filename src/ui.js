@@ -1,7 +1,7 @@
 "use strict";
 //User Interface for The Payment System
 //@author James Church
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.start = void 0;
 var readlineSync = require("readline-sync"); //for easier repeated prompts
 var payment_systems_1 = require("./payment_systems");
