@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "module",
+  //"type": "module",
   "module": "es6",
   "author": "Kaitlyn Hardin",
   "license": "ISC",
